@@ -63,6 +63,17 @@ class Mainscreen extends StatelessWidget {
                       InfoItem(value: '20', title: 'Repositories'),
                     ],
                   ),
+                  SizedBox(height: 28),
+                  Text(
+                    'About',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.start,
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    "I'm a Flutter developer with a passion for creating beautiful and functional applications. I love exploring new technologies and continuously improving my skills.",
+                    textAlign: TextAlign.justify,
+                  ),
                 ],
               ),
             ),
