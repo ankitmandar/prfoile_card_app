@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_card_app/widgets/item_row.dart';
 
 class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
@@ -38,7 +39,30 @@ class Mainscreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 30),
-                  Row(mainAxisAlignment: MainAxisAlignment.center),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InfoItem(value: '4.8', title: 'Rating'),
+                      SizedBox(
+                        height: 28,
+                        child: VerticalDivider(
+                          width: 45,
+                          thickness: 1.2,
+                          color: Colors.pinkAccent,
+                        ),
+                      ),
+                      InfoItem(value: '2.4k', title: 'Followers'),
+                      SizedBox(
+                        height: 28,
+                        child: VerticalDivider(
+                          width: 45,
+                          thickness: 1.2,
+                          color: Colors.pinkAccent,
+                        ),
+                      ),
+                      InfoItem(value: '20', title: 'Repositories'),
+                    ],
+                  ),
                 ],
               ),
             ),
